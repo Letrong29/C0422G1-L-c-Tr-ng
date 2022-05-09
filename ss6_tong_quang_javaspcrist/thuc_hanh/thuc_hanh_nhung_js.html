@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--cách nhúng inline-->
+<button type="button" onclick="alert('xin chào !')">click</button>
+<hr>
+<br>
+<!--cách nhúng internal-->
+<button type="button" onclick="showMessage();"> Click Me</button>
+<script>
+    function showMessage() {
+        alert('Xin Chào');
+
+    }
+</script>
+<hr>
+<br>
+<!--cách nhúng External-->
+<button type="button" onclick="showA()"> Click Me !</button>
+<script src="showA.js"></script>
+
+</body>
+</html>

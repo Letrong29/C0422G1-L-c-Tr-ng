@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành hiển thị đầu ra</title>
+</head>
+<body>
+<button type="button" onclick="showinfo();">Click Me!</button>
+<script>
+    function showinfo() {
+        alert('Xin Chào');
+
+    }
+</script>
+
+<br>
+<br>
+<div id="abcd"></div>
+<button type="button" onclick="showMessage();"> Click Me!</button>
+<script>
+    function showMessage() {
+        document.getElementById('abcd').innerHTML = 'Xin chào';
+    }
+</script>
+
+<br>
+<br>
+<button type="button" onclick="sayhello();">Click Me! </button>
+<script>
+    function sayhello() {
+        document.write('Xin chào!');
+
+    }
+</script>
+<br>
+<br>
+<button type="button" onclick="showme();">Đọc thông báo</button>
+<script>
+    function showme() {
+        console.log('Hello world');
+
+    }
+</script>
+
+
+</body>
+</html>
