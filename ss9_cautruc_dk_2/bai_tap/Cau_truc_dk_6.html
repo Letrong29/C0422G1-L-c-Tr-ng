@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--Tính số tiền hoa hồng nhận được
+Doanh thu =< 10tr =< 3%
+Doanh thu > 10 tr => Hoa hồng 5%
+doanh thu > 20 tr => Hoa hồng 10%
+Doanh thu > 50tr => 20%
+-->
+<Script>
+    let Target = parseInt(prompt("Nhập doanh thu bán hàng:"))
+    let Target_bang10tr = 3
+    let Target10tr = 5
+    let Target20tr = 10
+    let Target50tr = 20
+    let Comisson5PhanTram = ((Target10tr * Target)/100)
+    let Comisson10PhanTram = ((Target20tr * Target)/100)
+    let Comisson20PhanTram = ((Target50tr * Target)/100)
+    let Comisson3PhanTram = ((Target_bang10tr * Target)/100)
+
+    if(Target > 10000000) {
+        alert(Comisson5PhanTram)
+    }else if (Target > 20000000) {
+        alert(Comisson10PhanTram)
+    }else if (Target > 50000000) {
+        alert(Comisson20PhanTram)
+    }else
+        alert(Comisson3PhanTram)
+</Script>
+
 </body>
 </html>

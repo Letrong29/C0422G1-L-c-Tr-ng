@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let Test = parseInt(prompt("Nhâp điểm kiểm tra:"))
+    let Midterm = parseInt(prompt("Nhập điểm giữa kỳ:"))
+    let Final = parseInt(prompt("Nhập điểm cuối kỳ:"))
+    Avenger = (Test + Midterm + Final)/3
+    Excellent = (Avenger > 9)
+    Good = (Avenger > 7)
+    Ells = (Avenger > 5)
+    Medium = (Avenger > 3)
+
+    if (Excellent){
+        document.write("Excellent");
+    }else if (Good){
+        document.write("Good");
+    }else if (Ells){
+        document.write("Ells");
+    }else if (Medium){
+        document.write("Medium");
+    }else
+        document.write("Weak")
+</script>
+
 </body>
 </html>

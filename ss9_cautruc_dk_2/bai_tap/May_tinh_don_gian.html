@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        tr td button {
+            width: 50px;height: 50px;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+<table border="1" cellpadding="1px" cellspacing="5px">
+    <tr>
+        <td colspan="4" style="height: 50px"><input style="width: 230px; height: 50px; text-align: right" type="text" id="result"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="callValue('1')">1</button></td>
+        <td><button type="button" onclick="callValue('2')">2</button></td>
+        <td><button type="button" onclick="callValue('3')">3</button></td>
+        <td><button type="button" onclick="callValue('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="callValue('4')">4</button></td>
+        <td><button type="button" onclick="callValue('5')">5</button></td>
+        <td><button type="button" onclick="callValue('6')">6</button></td>
+        <td><button type="button" onclick="callValue('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="callValue('7')">7</button></td>
+        <td><button type="button" onclick="callValue('8')">8</button></td>
+        <td><button type="button" onclick="callValue('9')">9</button></td>
+        <td><button type="button" onclick="callValue('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="remove()">C</button></td>
+        <td><button type="button" onclick="callValue('0')">0</button></td>
+        <td><button type="button" onclick="caculation('=')">=</button></td>
+        <td><button type="button" onclick="callValue('/')">/</button></td>
+    </tr>
+</table>
+<script>
+    let str =''
+    function callValue(value) {
+        str += value
+        document.getElementById("result").value = str
+    }
+    function caculation() {
+      let a =  document.getElementById("result").value;
+      document.getElementById("result").value = eval(a);
+    }
+
+    function remove() {
+        document.getElementById("result").value =""
+    }
+
+
+
+
+
+
+
+</script>
+
 </body>
 </html>

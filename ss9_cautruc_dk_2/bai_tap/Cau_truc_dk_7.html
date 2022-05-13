@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--Phí thuê bao bắt buộc là 25 nghìn.-->
+<!--600 đồng cho mỗi gọi của 50 phút đầu tiên.-->
+<!--400 đồng cho mỗi phút gọi của 150 phút tiếp theo.-->
+<!--200 đồng cho mỗi phút gọi của 200 phút tiếp theo.-->
+<!--Tính cước điện thoại-->
+<script>
+    let SoPhutGoi = parseInt(prompt("Số Phút Cuộc Gọi:"))
+    let CuocCoDinh = 25000
+    if (SoPhutGoi > 200){
+        if (SoPhutGoi == 200){
+            CuocGoi = (SoPhutGoi * 200)
+            alert(CuocGoi)
+        }else if (SoPhutGoi > 150){
+            if (SoPhutGoi == 150){
+                CuocGoi = (SoPhutGoi * 400)
+                alert(CuocGoi)
+            }else
+                CuocGoi = (SoPhutGoi * 600)
+                alert(CuocGoi)
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
