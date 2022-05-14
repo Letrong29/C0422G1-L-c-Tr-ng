@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Giải phương trình</h1>
+<h2>ax^2 + bx + c = 0</h2>
+<input type="text" value="a" id="a"> X^2 +
+<input type="text" value="b" id="b"> +
+<input type="text" value="c" id="c"> = 0
+<br><br>
+<button type="button" onclick="ketqua()">X =</button>
+
+<script>
+    function ketqua() {
+        let A = document.getElementById("a").value
+        let B = document.getElementById("b").value
+        let C = document.getElementById("c").value
+        let Denta = Math.pow(B, 2) - (4 * A * C)
+        if (Denta < 0) {
+            alert("phương trình vô nghiệm")
+            
+        } else  if (Denta = 0) {
+            let x = ( - B / 2 * A )
+            alert("phương trình có nghiệm kép X = " + x)
+
+        }else if (Denta > 0){
+            let x1 = (- B + Math.sqrt(Denta)) / (2 * A)
+            let x2 = (-B - Math.sqrt(Denta)) / (2 * A)
+            alert("phương trình có 2 nghiệm X1 =" + x1 )
+            alert("X2 =" + x2)
+        }
+    }
+</script>
+
+</body>
+</html>

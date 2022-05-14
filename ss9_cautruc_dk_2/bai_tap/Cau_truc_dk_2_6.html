@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Tính nghiệm phương trình</h1>
+<h2> Phương trình ax + b = 0</h2>
+<input type="text"  name="a" value="a" id="a"> X +
+<input type="text" name="b" value="b" id="b"> = 0
+<br>
+<br>
+<button type="button" onclick="tinketquaPT1()"> X =</button>
+<input type="text" id="ketquaPT1">
+
+<h2> Phương trình ax - b = 0</h2>
+<br>
+<input type="text"  name="c" value="a" id="c"> X -
+<input type="text" name="d" value="b" id="d"> = 0
+<br>
+<br>
+
+<button type="button" onclick="tinhketquaPT2()"> X =</button>
+<input type="text" id="ketquaPT2">
+
+
+<script>
+
+
+function tinketquaPT1() {
+    let A = document.getElementById("a").value ;
+    let B = document.getElementById("b").value ;
+    document.getElementById("ketquaPT1").value = ( - B / A )
+}
+function tinhketquaPT2() {
+    let C = document.getElementById("c").value ;
+    let D = document.getElementById("d").value ;
+    document.getElementById("ketquaPT2").value = ( C / D)
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
