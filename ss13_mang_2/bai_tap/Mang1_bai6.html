@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let C = Array(10)
+    for (let i = 0; i < C.length; i ++){
+        C[i] = parseInt(prompt("Nhập giá trị của mảng C tại vị trí " + i));
+    }
+    let V = parseInt(prompt("Nhập 1 số V bất kỳ:"))
+    let count = 0
+    for (i = 0; i < C.length; i++){
+        if (C[i] == V){
+            count++;
+            break;
+        }
+    }
+    if (count > 0){
+        alert(V + " đã có trong mảng")
+    }else alert(V + " không có trong mảng")
+</script>
+
+</body>
+</html>

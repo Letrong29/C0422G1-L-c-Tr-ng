@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = Array();
+    for (i = 0; i < 10; i++){
+        x[i] = parseInt(prompt("Nhập một số :"))
+    }
+    let max = x[0]
+    let indexx
+    for (i = 1; i < 10; i++){
+        if (max < x[i]){
+            max = x[i]
+            indexx = i
+        }
+    }document.write( max + " là số lớn nhất tại vị trí " + indexx + "<br>")
+
+    let Sum = 0
+    let Average = 0
+    for (let i = 0; i < 10; i++){
+        Sum += x[i]
+    }
+    Average = Sum / 10
+   document.write(Average + " là trung bình tổng của mảng" + x)
+
+</script>
+
+</body>
+</html>

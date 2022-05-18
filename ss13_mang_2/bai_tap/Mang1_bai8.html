@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArray = Array(5)
+    for (let index = 0; index < myArray.length; index++){
+        myArray[index] = parseInt(prompt("nhập phần tử cho mảng myArray tại vị trí " + index))
+    }
+    let c = 0
+    for (i = 0; i < myArray.length; i++){
+       for (j = 0; j < myArray.length; j++){
+           if (myArray[j] < myArray[i]){
+               c = myArray[i]
+               myArray[i] = myArray[j]
+               myArray[j] = c
+           }
+       }
+    }
+    document.write(myArray)
+
+
+
+
+
+</script>
+
+</body>
+</html>

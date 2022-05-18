@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let B = Array();
+   let count = 0
+   for (let i = 0; i < 5; i ++){
+       B[i] = prompt("Nhập pần tử của mảng ở vị trí " + i);
+       if (B[i] < 0){
+           count++
+       }
+   }
+ document.write("có " + count + " số nguyên âm trong chuỗi B = " + B);
+
+</script>
+
+</body>
+</html>
