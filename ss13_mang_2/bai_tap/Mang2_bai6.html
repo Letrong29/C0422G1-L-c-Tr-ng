@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArr = prompt("nhập ký tự")
+    let newMayArr = myArr.split("")
+    for (let i = 0; i < newMayArr.length ; i++) {
+        if (newMayArr[i] == "-"){
+            newMayArr[i] = "_"
+        }
+    }
+    document.write(newMayArr)
+
+</script>
+
+</body>
+</html>

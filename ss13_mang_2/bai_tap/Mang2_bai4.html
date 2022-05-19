@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt(" Nhập một chuỗi"); //khởi tạo biến str cho người dùng nhập 1 chuỗi
+    let arr = str.split(" ") // tách chuỗi con của chuỗi str bỡi " " và chuyển thành mảng
+    document.write(arr) // in ra mảng
+    let  count = 0 // khởi tạo biến đếm
+    for (i = 0; i < arr.length ; i++){
+        if (arr[i] == ""){ // điều kiện nếu phần tử trong mảng == "" (rỗng) thì bỏ qua ko đếm
+            continue
+        }
+        count++
+    }
+    console.log(count)
+
+</script>
+</body>
+</html>

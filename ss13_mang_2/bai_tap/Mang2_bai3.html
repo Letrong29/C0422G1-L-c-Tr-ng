@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt(" nhập kích thước của mảng")) //khai báo kích thước của mảng
+    let myArr = Array(a) // khởi tại mảng với kích thước đã cho
+    for (let i = 0; i < myArr.length; i++) {
+        myArr[i] = prompt("nhập ký tự cho mảng:")
+    }
+
+    document.write("mảng myArr có số ký tự = " + myArr.length + "<br>");
+    document.write("những ký tự đó là " + myArr)
+
+</script>
+</body>
+</html>
