@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1.Viết hàm nhận vào 3 số nguyên bất kỳ
+2.trả về số nguyên có giá trị nhỏ nhất.-->
+<script>
+    let a = parseInt(prompt("nhập số thứ nhất"))
+    let b = parseInt(prompt("nhập số thứ hai"))
+    let c = parseInt(prompt("nhập số thứ ba"))
+
+    function fout_min_value(a, b, c) {
+        let min = a
+        let result
+        if (min > b){
+            min = b
+        }
+        if (min > c){
+            min = c
+        }
+        document.write(min + " là giá trị nhỏ nhất")
+        return result
+    }
+    fout_min_value(a,b,c)
+
+
+
+</script>
+
+</body>
+</html>

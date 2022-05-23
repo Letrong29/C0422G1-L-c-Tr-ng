@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1.Viết hàm truyền vào mảng số nguyên bất kỳ
+2.sau đó đảo ngược mảng số nguyên đó.-->
+
+<script>
+
+    let num = prompt("nhập mảng số nguyên :");
+
+    function daoMangmyArr(x) {
+        let myArr = x.split('');
+        let first = 0
+        let last = myarr.length - 1
+        while (first < last){
+            let y = myArr[first]
+            myArr[first] = myArr[last]
+            myArr[last] = y
+            first++
+            last--
+        }
+        alert(myArr)
+    }
+    daoMangmyArr(num)
+
+</script>
+</body>
+</html>

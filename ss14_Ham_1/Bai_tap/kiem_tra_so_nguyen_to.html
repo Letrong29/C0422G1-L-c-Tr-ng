@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let num = parseInt(prompt('nhập 1 số'))
+    function check(number) {
+        let count = 0
+        if (number > 2){
+            for (let i = 1; i < number; i++) {
+                if (number % 1 === 0){
+                    count++
+                }
+            }
+            if(count === 2){
+                alert("true")
+            }else {
+                alert("false")
+            }
+        }else {
+            alert("false")
+        }
+    }
+    check(num)
+
+</script>
+
+</body>
+</html>

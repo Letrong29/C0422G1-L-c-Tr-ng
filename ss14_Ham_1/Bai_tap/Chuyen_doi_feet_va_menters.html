@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--tạo form chon người dùng nhập -->
+<h2>chuyển mentor sang feet</h2>
+<p>Nhập mentor :</p>
+<input type="number" id="mentor" oninput="enterMentor()">
+<p id="feet"></p>
+<hr>
+<h2>chuyển feet sang mentor</h2>
+<p>Nhập feet:</p>
+<input type="number" id="feet1" oninput="enterFeet()">
+<p id="metor1"></p>
+
+<!--sử lý dữ liệu người dùng nhập-->
+<script>
+    function enterMentor() {
+        let metor = document.getElementById("mentor").value
+        let feet = (3.279 * metor)
+        document.getElementById("feet").innerHTML = feet
+    }
+    function enterFeet() {
+        let feet = document.getElementById("feet1").value
+        let mentor = (0.305 * feet)
+        document.getElementById("metor1").innerHTML = mentor
+
+    }
+
+</script>
+
+</body>
+</html>

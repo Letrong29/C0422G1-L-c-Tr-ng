@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. Viết hàm tính bình phương của một số bất kỳ được đưa vào
+2.  Gọi hàm vừa xây dựng được.-->
+<script>
+    let a = parseInt(prompt("Bạn muốn tính bình phương của: "))
+    function square(x) {
+        let result = Math.pow(x,2)
+        document.write("bình phương của " + x + " = " + result)
+        return result
+    }
+    let b = square(a)
+    console.log(b)
+
+
+</script>
+
+</body>
+</html>

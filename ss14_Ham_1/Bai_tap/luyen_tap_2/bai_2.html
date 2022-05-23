@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. Viết hàm tính diện tích hình tròn
+2. hàm tính chu vi hình tròn
+3. Gọi hàm vừa xây dựng được-->
+
+<script>
+    let x = parseInt(prompt("nhập bán kính hình tròn:")) //(1)
+    function acreage(x) {
+        let s = Math.pow(x,2) * 3.14
+        return s
+    }
+    function perimeter(y) { //(2)
+        let c = 2 * y * 3.14
+        return c
+    }
+    let a = acreage(x) // (3)
+    let b = perimeter(x) // (3)
+    document.write("hình tròn có bán kính " + x + " có diện tích = " + a + " và chu vi " + b )
+</script>
+</body>
+</html>

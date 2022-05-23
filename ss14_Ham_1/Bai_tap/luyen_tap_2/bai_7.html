@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. Viết hàm truyền vào 2 số nguyên bất kì,
+2. thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    let a = parseInt(prompt("nhập số thứ nhất"))
+    let b = parseInt(prompt("nhập số thứ hai"))
+    let myArr = Array()
+    function myFunction(x,y) {
+        myArr.push(x)
+        myArr.push(y)
+        let a = myArr[0]
+        myArr[0] = myArr[1]
+        myArr[1] = a
+        alert(myArr)
+    }
+    myFunction(a,b)
+</script>
+
+</body>
+</html>

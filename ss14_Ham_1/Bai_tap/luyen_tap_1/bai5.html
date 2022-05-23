@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. Tạo 1 mảng với 7 phần tử dạng chuỗi có giá trị là TÊN CÁC NGÔI SAO sau: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus.
+2. Tạo 1 mảng khác với 7 phần tử dạng chuỗi có giá trị là TÊN CÁC CHÒM SAO TƯƠNG ỨNG CHỨA CÁC NGÔI SAO: Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo.
+3. tạo một hàm nhận vào một tham số dạng chuỗi duy nhất.
+4. Trong hàm này, duyệt qua mảng thứ nhất để tìm tên ngôi sao.
+5. Nếu tìm thấy, trả lại giá trị tương ứng với chỉ số đó ở mảng thứ hai. Nói cách khác, trả lại tên chòm sao của ngôi sao đó.
+6. xử lý trong trường hợp không tìm thấy ngôi sao nào
+7. Trong phần <body> của trang web, dùng hộp thoại prompt để người dùng nhập vào tên của ngôi sao
+8. gọi hàm với thông tin đầu vào.
+9. Cho kết quả hiển thị trên màn hình.
+-->
+<script>
+    let nameStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let nameConstellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    let nSt = prompt("nhập tên ngôi sao bạn muốn tìm")
+
+    function myFunction(x) {
+        let value
+        let count = 0
+        for (let i = 0; i < nameStar.length ; i++) {
+            if (x == nameStar[i]){
+                value = nameConstellation[i]
+                document.write("sao " + x + " được tìm thấy tại chòm sao " + value)
+                count++
+                break;
+            }
+        }
+        if (count < 1){
+            document.write("không tìm thấy sao: " + x)
+        }
+    }
+    myFunction(nSt)
+
+</script>
+
+
+</body>
+</html>

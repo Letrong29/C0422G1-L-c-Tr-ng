@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. Viết hàm truyền vào một mảng ký tự,
+2. và một ký tự bất kỳ,
+3. kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+4. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. -->
+
+<script>
+    let str = prompt("nhập một mảng ký tự ")
+    let myStr = prompt("nhập ký tự bất kỳ")
+
+    function check(x, y) {
+        let myArr = x.split('')
+        let count = 0
+        for (let i = 0; i < myArr.length ; i++) {
+            if (y == myArr[i]){
+                count++
+            }
+        }
+        if (count > 0){
+            document.write("ký tự " + y + " xuất hiện " + count + " lần")
+        } else {
+            document.write(-1)
+        }
+
+    }
+    check(str, myStr)
+
+</script>
+
+
+</body>
+</html>
