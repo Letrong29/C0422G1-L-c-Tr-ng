@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:
++ Có thông số chiều dài (int).
++ Có thông số chiều rộng (int).
++ Có tính năng tính diện tích.
++ Có tính năng tính chu vi.
++ Có tính năng hiển thị trực quan hình chữ nhật bằng cách vẽ lên canvas
+
+Sử dụng lớp Rectangle vừa định nghĩa để viết một chương trình JavaScript  với kịch bản như sau:
+Khai báo và khởi tạo một đối tượng kiểu Rectangle.
+Hiển thị hình chữ nhật trên màn hình web
+Thay đổi chiều dài và chiều rộng của hình chữ nhật.
+In ra màn hình diện tích và chu vi của hình chữ nhật đó.-->
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
+<script>
+    class Rectangle{
+        constructor(dai, rong) {
+            this.dai = dai
+            this.rong = rong
+        };
+        getDai(){
+            return this.dai
+        }
+        getRong(){
+            return this.rong
+        }
+        getArea(){
+            return this.dai * this.rong
+        }
+        getPerimeter(){
+            return this.dai + this.rong * 2
+        }
+        setDai(dai){
+            this.dai = dai
+        }
+        setRong(rong){
+            this.rong = rong
+        }
+    };
+    let rectangle = new Rectangle(10,5)
+
+    rectangle.setDai(25);
+    rectangle.setRong(5);
+
+    document.write("diện tích : " + rectangle.getArea() + "<br>");
+    document.write("chu vi : " + rectangle.getPerimeter());
+
+    var canvas = document.getElementById("DemoCanvas");
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle='#fa4b2a';    // color of fill
+        ctx.fillRect(10, 40, 140, 160); // create rectangle
+    }
+
+
+
+</script>
+
+</body>
+</html>
